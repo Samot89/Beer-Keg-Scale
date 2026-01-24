@@ -269,6 +269,10 @@ Pivni-Vaha/
 ├── README_EN.md           # English documentation
 ├── pivni-vaha.yaml        # Complete ESPHome configuration
 ├── HA-Dashboard.yaml      # Dashboard card for Home Assistant
+├── HARDWARE.md            # Detailed hardware documentation
+├── CHANGELOG.md           # Version history and changes
+├── CONTRIBUTING.md        # Contributor guidelines
+├── secrets.yaml.example   # Configuration template
 ├── LICENSE                # MIT License
 └── .gitignore             # Git ignore files
 ```
@@ -277,17 +281,19 @@ Pivni-Vaha/
 
 ## 🤝 Contributing
 
-Contributions are welcome! If you have ideas for improvements:
+Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to contribute.
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+**Quick links:**
+- 🐛 [Report a bug](https://github.com/Samot89/Pivni-Vaha/issues/new?template=bug_report.md)
+- ✨ [Request a feature](https://github.com/Samot89/Pivni-Vaha/issues/new?template=feature_request.md)
+- 🔧 [Detailed hardware documentation](HARDWARE.md)
+- 📝 [Change history](CHANGELOG.md)
 
 ---
 
 ## 📝 Changelog
+
+For complete change history, see [CHANGELOG.md](CHANGELOG.md)
 
 ### v1.0 (2025-01)
 - ✅ First public release

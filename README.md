@@ -269,6 +269,10 @@ Pivni-Vaha/
 ├── README_EN.md           # Anglická dokumentace
 ├── pivni-vaha.yaml        # Kompletní ESPHome konfigurace
 ├── HA-Dashboard.yaml      # Dashboard karta pro Home Assistant
+├── HARDWARE.md            # Detailní hardwarová dokumentace
+├── CHANGELOG.md           # Historie verzí a změn
+├── CONTRIBUTING.md        # Průvodce pro přispěvatele
+├── secrets.yaml.example   # Template pro konfiguraci
 ├── LICENSE                # MIT License
 └── .gitignore             # Git ignore soubory
 ```
@@ -277,17 +281,19 @@ Pivni-Vaha/
 
 ## 🤝 Přispívání
 
-Příspěvky jsou vítány! Pokud máte nápady na vylepšení:
+Příspěvky jsou vítány! Přečtěte si prosím [CONTRIBUTING.md](CONTRIBUTING.md) pro podrobnosti o tom, jak přispět.
 
-1. Forkněte repozitář
-2. Vytvořte feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commitněte změny (`git commit -m 'Add some AmazingFeature'`)
-4. Pushněte do branch (`git push origin feature/AmazingFeature`)
-5. Otevřete Pull Request
+**Rychlé odkazy:**
+- 🐛 [Nahlásit chybu](https://github.com/Samot89/Pivni-Vaha/issues/new?template=bug_report.md)
+- ✨ [Navrhnout funkci](https://github.com/Samot89/Pivni-Vaha/issues/new?template=feature_request.md)
+- 🔧 [Detailní hardwarová dokumentace](HARDWARE.md)
+- 📝 [Historie změn](CHANGELOG.md)
 
 ---
 
 ## 📝 Changelog
+
+Pro úplnou historii změn viz [CHANGELOG.md](CHANGELOG.md)
 
 ### v1.0 (2025-01)
 - ✅ První veřejné vydání
