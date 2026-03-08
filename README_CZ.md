@@ -4,7 +4,7 @@
 
 ### Inteligentní váha pro sledování obsahu pivního sudu v reálném čase
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: Non-Commercial](https://img.shields.io/badge/License-Non--Commercial-red.svg)](LICENSE)
 [![ESPHome](https://img.shields.io/badge/ESPHome-Compatible-blue.svg)](https://esphome.io/)
 [![Home Assistant](https://img.shields.io/badge/Home%20Assistant-Integration-41BDF5.svg)](https://www.home-assistant.io/)
 [![Made with ESP32](https://img.shields.io/badge/Made%20with-ESP32-orange.svg)](https://www.espressif.com/en/products/socs/esp32)
@@ -247,7 +247,7 @@ Příspěvky jsou vítány! Viz [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## 📄 Licence
 
-MIT License – viz [LICENSE](LICENSE).
+**Nekomerční licence** – volné použití pro osobní a hobby účely. Komerční použití je zakázáno. Viz [LICENSE](LICENSE) pro úplné podmínky.
 
 ---
 
