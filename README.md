@@ -23,9 +23,9 @@
 |:-:|:-:|:-:|
 | ![Scale platform top view](images/scale-platform-top.jpg) | ![Keg on scale](images/scale-in-use.jpg) | ![Electronics underside](images/electronics-bottom.jpg) |
 
-| OLED display – weight + beer count |
-|:-:|
-| ![OLED display 30.3 kg / 60 beers](images/display-weight-count.jpg) |
+| OLED display – weight + temperature | OLED display – weight + beer count |
+|:-:|:-:|
+| ![OLED display 30.3 kg / 3.2 C](images/display-weight-temp.jpg) | ![OLED display 30.3 kg / 60 beers](images/display-weight-count.jpg) |
 
 
 </div>
