@@ -23,9 +23,6 @@
 |:-:|:-:|:-:|
 | ![Platforma váhy](images/scale-platform-top.jpg) | ![Sud na váze](images/scale-in-use.jpg) | ![Elektronika spodek](images/electronics-bottom.jpg) |
 
-| Displej – váha + počet | Displej – váha + teplota |
-|:-:|:-:|
-| ![OLED displej váha a počet](images/display-weight-count.jpg) | ![OLED displej váha a teplota](images/display-weight-temp.jpg) |
 
 </div>
 
@@ -239,8 +236,8 @@ Firmware běží **plně offline** bez Wi-Fi nebo Home Assistant:
 **OLED mimo střed**
 → Upravte `const int X` v OLED lambdě (např. `const int X = 20;`) nebo `offset_x:`.
 
-**OLED displej nezobrazuje údaje při použití v lednici**
-→ Při testování v chladném prostředí (lednice) bylo zjištěno, že OLED displej přestane zobrazovat data. Měření a integrace s Home Assistant přitom fungují správně – problém se týká pouze lokálního zobrazení. Jako řešení stačí zařízení po umístění do lednice krátce odpojit a znovu připojit.
+**Funguje displej v lednici?**
+→ Ano – displej SSD1306 128×32 byl testován a funguje správně v chladném prostředí (lednice). Hmotnost, počet piv i teplota se zobrazují spolehlivě.
 
 **Nesprávný počet piv**
 → Zkontrolujte `MASS_PER_BEER = 0.505` kg. Upravte v YAML pro různé velikosti sklenic.

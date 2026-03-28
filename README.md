@@ -23,9 +23,6 @@
 |:-:|:-:|:-:|
 | ![Scale platform top view](images/scale-platform-top.jpg) | ![Keg on scale](images/scale-in-use.jpg) | ![Electronics underside](images/electronics-bottom.jpg) |
 
-| Display – weight + count | Display – weight + temperature |
-|:-:|:-:|
-| ![OLED display weight and count](images/display-weight-count.jpg) | ![OLED display weight and temperature](images/display-weight-temp.jpg) |
 
 </div>
 
@@ -239,8 +236,8 @@ The firmware runs **fully offline** without Wi-Fi or Home Assistant:
 **OLED display off-center**
 → Adjust `const int X` in the OLED lambda (e.g. `const int X = 20;`) or `offset_x:`.
 
-**OLED display does not show data when used in a refrigerator**
-→ During testing it was found that the OLED display stops showing data in cold environments (refrigerator). Measurements and Home Assistant integration continue to work correctly – only the local display is affected. The workaround is to briefly disconnect and reconnect the device after placing it in the fridge.
+**Does the display work in a refrigerator?**
+→ Yes – the SSD1306 128×32 display has been tested and works correctly in cold environments (refrigerator). Weight, beer count and temperature are all shown reliably.
 
 **Incorrect beer count**
 → Check `MASS_PER_BEER = 0.505` kg. Adjust in YAML for different glass sizes.
