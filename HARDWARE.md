@@ -15,11 +15,13 @@
 | 1 | ESP32 DevKit v1 | 38-pin, dual-core | 1× | ~$6 | [AliExpress](https://www.aliexpress.com/item/1005005626482837.html) |
 | 2 | HX711 | 24-bit ADC module | 4× | ~$1.5/pc | [AliExpress](https://www.aliexpress.com) |
 | 3 | Load cell | 20 kg, bar type | 4× | ~$3/pc | [AliExpress](https://www.aliexpress.com) |
-| 4 | OLED display | SH1106 128×64 I²C | 1× | ~$4 | [AliExpress](https://www.aliexpress.com) |
-| 5 | Power supply | 5V 2A | 1× | ~$2 | – |
-| 6 | Jumper wires | Dupont M-F, M-M | 1 set | ~$2 | – |
+| 4 | OLED display | SSD1306 128×32 I²C | 1× | ~$3 | [AliExpress](https://www.aliexpress.com) |
+| 5 | DS18B20 | Temperature sensor, 1-Wire | 1× | ~$2 | [AliExpress](https://www.aliexpress.com) |
+| 6 | Resistor 4.7 kΩ | Pull-up for DS18B20 DATA line | 1× | ~$0.1 | – |
+| 7 | Power supply | 5V 2A | 1× | ~$2 | – |
+| 8 | Jumper wires | Dupont M-F, M-M | 1 set | ~$2 | – |
 
-**Total estimated cost: ~$30 USD**
+**Total estimated cost: ~$35 USD**
 
 #### Optional Components
 
@@ -41,7 +43,7 @@
                     ESP32 DevKit v1 (38-pin)
                     ┌─────────────────────┐
                     │                     │
-    OLED SH1106     │  GPIO25 (SDA)       │
+    OLED SSD1306    │  GPIO25 (SDA)       │
     ┌────────┐      │  GPIO27 (SCL)       │
     │ SDA ───┼──────┤                     │
     │ SCL ───┼──────┤                     │
@@ -151,6 +153,7 @@
 |-------|---------------|------|
 | ESP32 enclosure | PLA/PETG, 20% infill, no supports, ~3h | [Printables](https://www.printables.com/model/1014797) |
 | HX711 bracket | PLA/PETG, 20% infill, no supports, ~1h | [Printables](https://www.printables.com/model/879042) |
+| OLED SSD1306 case | PLA/PETG, 20% infill, no supports, ~1h | [Thingiverse](https://www.thingiverse.com/thing:2844143/files) |
 
 ---
 
@@ -199,11 +202,13 @@
 | 1 | ESP32 DevKit v1 | 38-pin, dual-core | 1× | ~150 Kč | [AliExpress](https://www.aliexpress.com/item/1005005626482837.html) |
 | 2 | HX711 | 24-bit ADC modul | 4× | ~40 Kč/ks | [AliExpress](https://www.aliexpress.com) |
 | 3 | Tenzometr | 20 kg, bar type | 4× | ~80 Kč/ks | [AliExpress](https://www.aliexpress.com) |
-| 4 | OLED displej | SH1106 128×64 I²C | 1× | ~100 Kč | [AliExpress](https://www.aliexpress.com) |
-| 5 | Napájecí zdroj | 5V 2A | 1× | ~50 Kč | – |
-| 6 | Propojovací kabely | Dupont M-F, M-M | 1 sada | ~50 Kč | – |
+| 4 | OLED displej | SSD1306 128×32 I²C | 1× | ~70 Kč | [AliExpress](https://www.aliexpress.com) |
+| 5 | DS18B20 | Teplotní senzor, 1-Wire | 1× | ~50 Kč | [AliExpress](https://www.aliexpress.com) |
+| 6 | Rezistor 4,7 kΩ | Pull-up pro DS18B20 DATA | 1× | ~1 Kč | – |
+| 7 | Napájecí zdroj | 5V 2A | 1× | ~50 Kč | – |
+| 8 | Propojovací kabely | Dupont M-F, M-M | 1 sada | ~50 Kč | – |
 
-**Celková cena základního sestavení: ~1 100 Kč**
+**Celková cena základního sestavení: ~1 250 Kč**
 
 #### Volitelné komponenty
 
@@ -214,6 +219,7 @@
 | 3 | Kondenzátory | 100nF, 10µF | ~20 Kč | Filtrace napájení |
 | 4 | Montážní deska | Překližka / kov | ~100 Kč | Pro platformu |
 | 5 | Pouzdro ESP32 | 3D tisk | ~0 Kč | [Model zde](https://www.printables.com/model/1014797) |
+| 6 | Pouzdro OLED | 3D tisk | ~0 Kč | [Thingiverse](https://www.thingiverse.com/thing:2844143/files) |
 
 ---
 

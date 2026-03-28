@@ -23,6 +23,10 @@
 |:-:|:-:|:-:|
 | ![Scale platform top view](images/scale-platform-top.jpg) | ![Keg on scale](images/scale-in-use.jpg) | ![Electronics underside](images/electronics-bottom.jpg) |
 
+| Display – weight + count | Display – weight + temperature |
+|:-:|:-:|
+| ![OLED display weight and count](images/display-weight-count.jpg) | ![OLED display weight and temperature](images/display-weight-temp.jpg) |
+
 </div>
 
 ---
@@ -34,7 +38,7 @@ Smart scale for **automatic beer keg monitoring** with **Home Assistant** integr
 ### ✨ Key Features
 
 - **🎯 Precise measurement** – 4× load cells with HX711 amplifiers, median + EMA filtering
-- **📺 OLED display** (SH1106 128×64) – shows beer content and beer count
+- **📺 OLED display** (SSD1306 128×32) – shows beer content, beer count and temperature
 - **🔧 Easy two-step calibration** – persistent storage survives restarts
 - **🏠 Home Assistant** – full integration via ESPHome API
 - **📱 Web interface** – browser access on port 80
@@ -63,7 +67,8 @@ Smart scale for **automatic beer keg monitoring** with **Home Assistant** integr
 | ESP32 DevKit v1 | 38-pin | 1× | [AliExpress](https://www.aliexpress.com/item/1005005626482837.html) |
 | HX711 | 24-bit ADC amplifier | 4× | |
 | Load cell | 20 kg bar type | 4× | 20 kg recommended |
-| OLED display | SH1106 128×64 I²C | 1× | 0.96" or 1.3" |
+| OLED display | SSD1306 128×32 I²C | 1× | 0.96" |
+| DS18B20 | Temperature sensor, 1-Wire | 1× | + 4.7 kΩ pull-up resistor |
 | Jumper wires | Dupont M-F, M-M | 1 set | Shielded recommended |
 | Power supply | 5V → 3.3V regulated | 1× | Quality stabilized |
 
@@ -80,8 +85,11 @@ Smart scale for **automatic beer keg monitoring** with **Home Assistant** integr
 
 | Module | Signal | ESP32 Pin |
 |--------|--------|-----------|
-| **OLED SH1106** | SDA | **GPIO25** |
+| **OLED SSD1306** | SDA | **GPIO25** |
 | | SCL | **GPIO27** |
+| | VCC | 3.3V |
+| | GND | GND |
+| **DS18B20** | DATA | **GPIO12** |
 | | VCC | 3.3V |
 | | GND | GND |
 | **HX711 – Leg 1** | DOUT | **GPIO34** |
@@ -199,6 +207,7 @@ Import `HA-Dashboard.yaml` into Home Assistant for a ready-made card with:
 |-------|-------------|------|
 | ESP32 case | Simple enclosure for ESP32 DevKit | [Printables](https://www.printables.com/model/1014797-simple-case-for-the-cheap-esp32-breakout-board-of/files) |
 | HX711 bracket | Mount for HX711 module | [Printables](https://www.printables.com/model/879042-hx711-ad-module-board-bracket) |
+| OLED SSD1306 case | Case for SSD1306 128×32 display | [Thingiverse](https://www.thingiverse.com/thing:2844143/files) |
 
 **Print settings:** PLA or PETG · 20–30% infill · supports as needed
 
@@ -280,7 +289,7 @@ Contributions are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 ## 🙏 Acknowledgments
 
 - [ESPHome](https://esphome.io/) community for an excellent IoT platform
-- Authors of the HX711 and SH1106/SSD1306 libraries
+- Authors of the HX711 and SSD1306 libraries
 - Built as a practical tool for monitoring keg consumption with a focus on reliability and simple calibration
 
 ---

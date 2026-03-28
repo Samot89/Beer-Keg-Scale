@@ -23,6 +23,10 @@
 |:-:|:-:|:-:|
 | ![Platforma váhy](images/scale-platform-top.jpg) | ![Sud na váze](images/scale-in-use.jpg) | ![Elektronika spodek](images/electronics-bottom.jpg) |
 
+| Displej – váha + počet | Displej – váha + teplota |
+|:-:|:-:|
+| ![OLED displej váha a počet](images/display-weight-count.jpg) | ![OLED displej váha a teplota](images/display-weight-temp.jpg) |
+
 </div>
 
 ---
@@ -34,7 +38,7 @@ Chytrá váha pro **automatické sledování množství piva v sudu** s integrac
 ### ✨ Klíčové vlastnosti
 
 - **🎯 Přesné měření** – 4× tenzometry s HX711 převodníky, mediánový + EMA filtr
-- **📺 OLED displej** (SH1106 128×64) – zobrazuje obsah piva a počet piv
+- **📺 OLED displej** (SSD1306 128×32) – zobrazuje obsah piva, počet piv a teplotu
 - **🔧 Snadná dvoukroková kalibrace** – přežije restart
 - **🏠 Home Assistant** – plná integrace přes ESPHome API
 - **📱 Webové rozhraní** – přístup přes prohlížeč na portu 80
@@ -63,7 +67,8 @@ Chytrá váha pro **automatické sledování množství piva v sudu** s integrac
 | ESP32 DevKit v1 | 38-pin | 1× | [AliExpress](https://www.aliexpress.com/item/1005005626482837.html) |
 | HX711 | 24-bit ADC zesilovač | 4× | |
 | Tenzometr (load cell) | 20 kg bar type | 4× | Doporučeno 20 kg |
-| OLED displej | SH1106 128×64 I²C | 1× | 0,96" nebo 1,3" |
+| OLED displej | SSD1306 128×32 I²C | 1× | 0,96" |
+| DS18B20 | Teplotní senzor, 1-Wire | 1× | + pull-up rezistor 4,7 kΩ |
 | Propojovací kabely | Dupont M-F, M-M | 1 sada | Doporučeno stíněné |
 | Napájecí zdroj | 5V → 3,3V regulovaný | 1× | Kvalitní stabilizovaný |
 
@@ -80,8 +85,11 @@ Chytrá váha pro **automatické sledování množství piva v sudu** s integrac
 
 | Modul | Signál | ESP32 Pin |
 |-------|--------|-----------|
-| **OLED SH1106** | SDA | **GPIO25** |
+| **OLED SSD1306** | SDA | **GPIO25** |
 | | SCL | **GPIO27** |
+| | VCC | 3,3V |
+| | GND | GND |
+| **DS18B20** | DATA | **GPIO12** |
 | | VCC | 3,3V |
 | | GND | GND |
 | **HX711 – Noha 1** | DOUT | **GPIO34** |
@@ -199,6 +207,7 @@ Importujte `HA-Dashboard.yaml` do Home Assistant pro předpřipravenou kartu s:
 |-------|-------|-------|
 | Pouzdro ESP32 | Jednoduché pouzdro pro ESP32 DevKit | [Printables](https://www.printables.com/model/1014797-simple-case-for-the-cheap-esp32-breakout-board-of/files) |
 | Držák HX711 | Držák pro modul HX711 | [Printables](https://www.printables.com/model/879042-hx711-ad-module-board-bracket) |
+| Pouzdro OLED SSD1306 | Pouzdro pro displej SSD1306 128×32 | [Thingiverse](https://www.thingiverse.com/thing:2844143/files) |
 
 **Nastavení tisku:** PLA nebo PETG · výplň 20–30% · podpory dle potřeby
 
