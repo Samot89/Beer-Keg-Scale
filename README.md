@@ -295,6 +295,14 @@ Contributions are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 ---
 
+## ☕ Support
+
+If you like this project and it helped you, you can buy me a coffee:
+
+[![Buy me a coffee via PayPal](https://img.shields.io/badge/PayPal-Buy%20me%20a%20coffee%20%E2%98%95-00457C?logo=paypal&logoColor=white)](https://paypal.me/sulc89)
+
+Thank you! Donations are voluntary, the project stays free.
+
 <div align="center">
 
 **Made with 🍺 and ❤️ for beer enthusiasts**

@@ -263,6 +263,14 @@ Příspěvky jsou vítány! Viz [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ---
 
+## ☕ Podpora
+
+Pokud se ti projekt líbí a pomohl ti, můžeš mi přispět na kafe:
+
+[![Kup mi kafe přes PayPal](https://img.shields.io/badge/PayPal-Kup%20mi%20kafe%20%E2%98%95-00457C?logo=paypal&logoColor=white)](https://paypal.me/sulc89)
+
+Díky! Příspěvek je dobrovolný, projekt zůstává zdarma.
+
 <div align="center">
 
 **Vyrobeno s 🍺 a ❤️ pro pivní nadšence**
